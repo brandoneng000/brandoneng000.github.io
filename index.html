@@ -11,10 +11,32 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+      <link rel="stylesheet" href="assets/css/modal.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 	</head>
 	<body>
+
+		<div id="dark-bg" ></div>
+
+		<div class="picmodal" id="picmodal0">
+			<i class="fa fa-arrow-left" style="font-size: 45px; position: absolute; left: 0; top:50%; transform: translate(0, -50%)" aria-hidden="true"></i>
+			<i class="fa fa-arrow-right" style="font-size: 45px; position: absolute; right: 0; top:50%; transform: translate(0, -50%)" aria-hidden="true"></i>
+
+			<img class="picmodal-img" id="picmodal0-0" src="https://images2.alphacoders.com/505/505544.jpg" />
+			<img class="picmodal-img" id="picmodal0-1" src="http://www.games-utilities.com/wp-content/uploads/2010/10/logonormalnew.png" />
+			<img class="picmodal-img" id="picmodal0-2" src="https://wallpaperscraft.com/image/dota_2_galaxy_style_logo_94038_602x339.jpg" />
+			<img class="picmodal-img" id="picmodal0-3" src="http://cdn.dota2.com/apps/dota2/images/blogfiles/bljgg_arcup_sm.jpg" />
+			<img class="picmodal-img" id="picmodal0-4" src="http://orig10.deviantart.net/54c7/f/2013/214/a/7/dota_2_art_tournament__by_jirojh-d6fobgp.jpg" />
+		</div>
+		<div class="picmodal" id="picmodal1">
+		
+		</div>
+		<div class="picmodal" id="picmodal2">
+		
+		</div> 
 
 		<!-- Sidebar -->
 			<section id="sidebar">
@@ -40,11 +62,11 @@
 							<p>Brandon Eng is a recent graduate of California Polytechnic State University, San Luis Obispo with a major <br />
 							in Computer Engineering. He has interests in entertainment, graphics, problem solving, and security. </p>
 							<ul class="actions">
-								<li><a href="Brandon%20Eng%27s%20Resume.pdf" class="button scrolly">Learn more</a></li>
+								<li><a target="_blank" href="Brandon%20Eng%27s%20Resume.pdf" class="button scrolly">View Resume</a></li>
 							</ul>
 						</div>
 					</section>
-
+			   
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
 						<!-- RGB Painting Simulation -->
@@ -62,7 +84,7 @@
                            <p>It implements the RenderTexture and Texture2D from the Unity library. The RenderTextures allowed the images to be shown onto the cube. 
                            The Texture2D allowed for manipulation of the canvas.</p>
                            <ul class="actions">
-										<li><a href="#" class="button">Learn more</a></li>
+										<li onclick="openModal(0)"><a href="#" class="button modalbutton" onclick="return false;">Learn more</a></li>
 									</ul>
 								</div>
 							</div>
@@ -80,7 +102,7 @@
                            Pi Zero and a battery. Its top allows wires to access the Pi Zero.<br>
                            <a href="https://cpe.calpoly.edu/projects/bottle-brigade/">https://cpe.calpoly.edu/projects/bottle-brigade/</a></p>
 									<ul class="actions">
-										<li><a href="#" class="button">Learn more</a></li>
+										<li><a href="#" class="button modalbutton">Learn more</a></li>
 									</ul>
 								</div>
 							</div>
@@ -99,7 +121,7 @@
                            procedural generation so that there would be variation with each play attempt. <br>
                            <a href="http://globalgamejam.org/2016/games/writers-block">http://globalgamejam.org/2016/games/writers-block</a></p>
 									<ul class="actions">
-										<li><a href="#" class="button">Learn more</a></li>
+										<li><a href="#" class="button modalbutton">Learn more</a></li>
 									</ul>
 								</div>
 							</div>
@@ -118,7 +140,7 @@
                            solve these ciphers in order to proceed. The various ciphers used were Caesar, Atbash, 
                            A1Z26, and Vigenere.</p>
 									<ul class="actions">
-										<li><a href="#" class="button">Learn more</a></li>
+										<li><a href="#" class="button modalbutton">Learn more</a></li>
 									</ul>
 								</div>
 							</div>
@@ -136,7 +158,7 @@
                            or two temperature sources. The temperature would be calculated by averaging the temperatures
                            of adjacent cells. The designated temperatures would remain constant throughout the test.</p>
 									<ul class="actions">
-										<li><a href="#" class="button">Learn more</a></li>
+										<li><a href="#" class="button modalbutton">Learn more</a></li>
 									</ul>
 								</div>
 							</div>
@@ -152,7 +174,7 @@
                            The user would provide an input that has been compressed using the LZW algorithm. The decompression program would
                            then show what the actual information the compressed input was. </p>
 									<ul class="actions">
-										<li><a href="#" class="button">Learn more</a></li>
+										<li><a href="#" class="button modalbutton">Learn more</a></li>
 									</ul>
 								</div>
 							</div>
@@ -170,7 +192,7 @@
                            treasures were designed using OpenGL. The maze was created with procedural generation. 
                            The location of the monsters and treasures will vary each time the player starts a game.  </p>
 									<ul class="actions">
-										<li><a href="#" class="button">Learn more</a></li>
+										<li><a href="#" class="button modalbutton">Learn more</a></li>
 									</ul>
 								</div>
 							</div>
@@ -237,5 +259,6 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 
+         <script src="assets/js/modal.js"></script>
 	</body>
 </html>
