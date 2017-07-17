@@ -11,20 +11,35 @@ function openModal(id) {
 var currentSSIdx;
 
 function showSSpic(elem, idx) {
-    console.log("aosiuhd")
-    var slide = document.getElementById(elem.id + "-" + idx)
-    console.log(slide)
+    var slide = document.getElementById(elem.id + "-" + idx);
     slide.style.display = "block";
     currentSSIdx = idx;
 }
 
 function SSNext(id) {
-    document.getElementById(id + "-" + currentSSIdx).style.display = "none";
-    
+    console.log("$$$$", currentSSIdx, id + "-" + currentSSIdx, id)
+    var currentSS = document.getElementById(id + "-" + currentSSIdx)
+    currentSS.style.display = "none";
+    var futureSS = document.getElementById(id + "-" + (currentSSIdx + 1));
+    if (futureSS) {
+        futureSS.style.display = "block";
+        currentSSIdx++;
+    } else {
+        currentSSIdx = 0;
+        document.getElementById(id + "-" + currentSSIdx).style.display = "block";
+    }
 }
 
 function SSPrev(id) {
-
+    var currentSS = document.getElementById(id + "-" + currentSSIdx)
+    currentSS.style.display = "none";
+    var futureSS = document.getElementById(id + "-" + (currentSSIdx - 1));
+    if (futureSS) {
+        futureSS.style.display = "block";
+        currentSSIdx--;
+    } else {
+        document.getElementsByClassName(id + "-img")
+    }
 }
 
 // Get the modal
@@ -38,13 +53,18 @@ window.onclick = function(event) {
             event.target.className !== "button modalbutton" &&
             event.target.className !== "fa fa-arrow-right" &&
             event.target.className !== "fa fa-arrow-left" &&
-            event.target.className !== "picmodal-img" &&
+            event.target.className.indexOf("ss-image") === -1 &&
             modals[i].style.opacity === "1" ) {
 
             modals[i].style.opacity = 0;
             modals[i].style.zIndex = -1000;
 
             document.getElementById("dark-bg").style.display = "none";
+
+            var images = document.getElementsByClassName("ss-image");
+            for (var i = 0; i < images.length; i++) {
+                images[i].style.display = "none";
+            }
         }
     }
 }
