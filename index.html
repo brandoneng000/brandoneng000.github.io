@@ -42,9 +42,40 @@
 			<img class="ss-image picmodal1-img" id="picmodal1-4" src="images/Bottle%20Brigade/V4_4%20Top.png" />
 		</div>
 		<div class="picmodal" id="picmodal2">
-		
+			<i onclick="SSPrev('picmodal2')" class="fa fa-arrow-left" style="font-size: 45px; position: absolute; left: 0; top:50%; transform: translate(0, -50%)" aria-hidden="true"></i>
+			<i onclick="SSNext('picmodal2')" class="fa fa-arrow-right" style="font-size: 45px; position: absolute; right: 0; top:50%; transform: translate(0, -50%)" aria-hidden="true"></i>
+
+			<img class="ss-image picmodal2-img" id="picmodal2-0" src="images/Gravitatis%20Cecidisse/TA%20Found%20Book.png" />
+			<img class="ss-image picmodal2-img" id="picmodal2-1" src="images/Gravitatis%20Cecidisse/TA%20Start.png" />
+		</div> 
+		<div class="picmodal" id="picmodal3">
+			<i onclick="SSPrev('picmodal3')" class="fa fa-arrow-left" style="font-size: 45px; position: absolute; left: 0; top:50%; transform: translate(0, -50%)" aria-hidden="true"></i>
+			<i onclick="SSNext('picmodal3')" class="fa fa-arrow-right" style="font-size: 45px; position: absolute; right: 0; top:50%; transform: translate(0, -50%)" aria-hidden="true"></i>
+
+			<img class="ss-image picmodal3-img" id="picmodal3-0" src="images/LinSim/Linear%20Sim%203%20C.png" />
+			<img class="ss-image picmodal3-img" id="picmodal3-1" src="images/LinSim/Linear%20Sim%205%20C.png" />
+		</div> 
+		<div class="picmodal" id="picmodal4">
+			<i onclick="SSPrev('picmodal4')" class="fa fa-arrow-left" style="font-size: 45px; position: absolute; left: 0; top:50%; transform: translate(0, -50%)" aria-hidden="true"></i>
+			<i onclick="SSNext('picmodal4')" class="fa fa-arrow-right" style="font-size: 45px; position: absolute; right: 0; top:50%; transform: translate(0, -50%)" aria-hidden="true"></i>
+
+			<img class="ss-image picmodal4-img" id="picmodal4-0" src="images/LZW/LZW%20bronze%20test%201.png" />
 		</div> 
 
+		<div class="picmodal" id="picmodal5">
+			<i onclick="SSPrev('picmodal5')" class="fa fa-arrow-left" style="font-size: 45px; position: absolute; left: 0; top:50%; transform: translate(0, -50%)" aria-hidden="true"></i>
+			<i onclick="SSNext('picmodal5')" class="fa fa-arrow-right" style="font-size: 45px; position: absolute; right: 0; top:50%; transform: translate(0, -50%)" aria-hidden="true"></i>
+
+			<img class="ss-image picmodal5-img" id="picmodal5-0" src="images/Writer%27s%20Block/Writer%27s%20Block.png" />
+		</div> 
+		<div class="picmodal" id="picmodal6">
+			<i onclick="SSPrev('picmodal6')" class="fa fa-arrow-left" style="font-size: 45px; position: absolute; left: 0; top:50%; transform: translate(0, -50%)" aria-hidden="true"></i>
+			<i onclick="SSNext('picmodal6')" class="fa fa-arrow-right" style="font-size: 45px; position: absolute; right: 0; top:50%; transform: translate(0, -50%)" aria-hidden="true"></i>
+
+			<img class="ss-image picmodal6-img" id="picmodal6-0" src="images/Carrot%20Hunter/Carrot%20Hunter%20Wins.png" />
+			<img class="ss-image picmodal6-img" id="picmodal6-1" src="images/Carrot%20Hunter/Carrot%20Hunter%20Starts.png" />
+			<img class="ss-image picmodal6-img" id="picmodal6-2" src="images/Carrot%20Hunter/Carrot%20Hunter%20Loses.png" />
+		</div>
 		<!-- Sidebar -->
 			<section id="sidebar">
 				<div class="inner">
@@ -128,7 +159,7 @@
                            procedural generation so that there would be variation with each play attempt. <br>
                            <a href="http://globalgamejam.org/2016/games/writers-block">http://globalgamejam.org/2016/games/writers-block</a></p>
 									<ul class="actions">
-										<li><a href="#" class="button modalbutton">Learn more</a></li>
+										<li onclick="openModal(5)"><a href="#" class="button modalbutton" onclick="return false;">View Picture</a></li>
 									</ul>
 								</div>
 							</div>
@@ -147,7 +178,7 @@
                            solve these ciphers in order to proceed. The various ciphers used were Caesar, Atbash, 
                            A1Z26, and Vigenere.</p>
 									<ul class="actions">
-										<li><a href="#" class="button modalbutton">Learn more</a></li>
+										<li onclick="openModal(2)"><a href="#" class="button modalbutton" onclick="return false;">View Pictures</a></li>
 									</ul>
 								</div>
 							</div>
@@ -165,7 +196,7 @@
                            or two temperature sources. The temperature would be calculated by averaging the temperatures
                            of adjacent cells. The designated temperatures would remain constant throughout the test.</p>
 									<ul class="actions">
-										<li><a href="#" class="button modalbutton">Learn more</a></li>
+										<li onclick="openModal(3)"><a href="#" class="button modalbutton" onclick="return false;">View Pictures</a></li>
 									</ul>
 								</div>
 							</div>
@@ -181,7 +212,7 @@
                            The user would provide an input that has been compressed using the LZW algorithm. The decompression program would
                            then show what the actual information the compressed input was. </p>
 									<ul class="actions">
-										<li><a href="#" class="button modalbutton">Learn more</a></li>
+										<li onclick="openModal(4)"><a href="#" class="button modalbutton" onclick="return false;">View Picture</a></li>
 									</ul>
 								</div>
 							</div>
@@ -199,7 +230,7 @@
                            treasures were designed using OpenGL. The maze was created with procedural generation. 
                            The location of the monsters and treasures will vary each time the player starts a game.  </p>
 									<ul class="actions">
-										<li><a href="#" class="button modalbutton">Learn more</a></li>
+										<li onclick="openModal(6)"><a href="#" class="button modalbutton" onclick="return false;">View Pictures</a></li>
 									</ul>
 								</div>
 							</div>
