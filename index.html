@@ -31,7 +31,15 @@
 			<img class="ss-image picmodal0-img" id="picmodal0-3" src="images/RGB/Hello.png" />
 		</div>
 		<div class="picmodal" id="picmodal1">
-		
+			<i onclick="SSPrev('picmodal1')" class="fa fa-arrow-left" style="font-size: 45px; position: absolute; left: 0; top:50%; transform: translate(0, -50%)" aria-hidden="true"></i>
+			<i onclick="SSNext('picmodal1')" class="fa fa-arrow-right" style="font-size: 45px; position: absolute; right: 0; top:50%; transform: translate(0, -50%)" aria-hidden="true"></i>
+
+			<img class="ss-image picmodal1-img" id="picmodal1-0" src="images/Bottle%20Brigade/V4_4%20All%20Pieces.png" />
+			<img class="ss-image picmodal1-img" id="picmodal1-1" src="images/Bottle%20Brigade/V4_4%20Battery.png" />
+			<img class="ss-image picmodal1-img" id="picmodal1-2" src="images/Bottle%20Brigade/V4_4%20Bottom.png" />
+			<img class="ss-image picmodal1-img" id="picmodal1-3" src="images/Bottle%20Brigade/V4_4%20Middle.png" />
+			<img class="ss-image picmodal1-img" id="picmodal1-4" src="images/Bottle%20Brigade/V4_4%20Mounting%20Pillars.png" />
+			<img class="ss-image picmodal1-img" id="picmodal1-4" src="images/Bottle%20Brigade/V4_4%20Top.png" />
 		</div>
 		<div class="picmodal" id="picmodal2">
 		
@@ -83,7 +91,7 @@
                            <p>It implements the RenderTexture and Texture2D from the Unity library. The RenderTextures allowed the images to be shown onto the cube. 
                            The Texture2D allowed for manipulation of the canvas.</p>
                            <ul class="actions">
-										<li onclick="openModal(0)"><a href="#" class="button modalbutton" onclick="return false;">Learn more</a></li>
+										<li onclick="openModal(0)"><a href="#" class="button modalbutton" onclick="return false;">View Pictures</a></li>
 									</ul>
 								</div>
 							</div>
@@ -101,7 +109,7 @@
                            Pi Zero and a battery. Its top allows wires to access the Pi Zero.<br>
                            <a href="https://cpe.calpoly.edu/projects/bottle-brigade/">https://cpe.calpoly.edu/projects/bottle-brigade/</a></p>
 									<ul class="actions">
-										<li><a href="#" class="button modalbutton">Learn more</a></li>
+										<li onclick="openModal(1)"><a href="#" class="button modalbutton" onclick="return false;">View Pictures</a></li>
 									</ul>
 								</div>
 							</div>
