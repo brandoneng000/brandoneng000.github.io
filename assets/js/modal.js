@@ -18,6 +18,15 @@ function showSSpic(elem, idx) {
     currentSSIdx = idx;
 }
 
+function SSNext(id) {
+    document.getElementById(id + "-" + currentSSIdx).style.display = "none";
+    
+}
+
+function SSPrev(id) {
+
+}
+
 // Get the modal
 var modal = document.getElementById('picmodal0');
 
