@@ -17,7 +17,6 @@ function showSSpic(elem, idx) {
 }
 
 function SSNext(id) {
-    console.log("$$$$", currentSSIdx, id + "-" + currentSSIdx, id)
     var currentSS = document.getElementById(id + "-" + currentSSIdx)
     currentSS.style.display = "none";
     var futureSS = document.getElementById(id + "-" + (currentSSIdx + 1));
@@ -38,7 +37,10 @@ function SSPrev(id) {
         futureSS.style.display = "block";
         currentSSIdx--;
     } else {
-        document.getElementsByClassName(id + "-img")
+        var slides = document.getElementsByClassName(id + "-img");
+        currentSSIdx = slides.length-1;
+        futureSS = document.getElementById(id + "-" + (currentSSIdx));
+        futureSS.style.display = "block";
     }
 }
 
