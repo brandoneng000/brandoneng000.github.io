@@ -1,6 +1,298 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-<header><title>Hello World</title></header>
-<body>
-Hello world
-</body>
+	<head>
+		<title>Brandon Eng</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+      	<link rel="stylesheet" href="assets/css/modal.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+	</head>
+	<body>
+
+		<div id="dark-bg" ></div>
+
+		<div class="picmodal" id="picmodal0">
+			<i onclick="SSPrev('picmodal0')" class="fa fa-arrow-left" style="font-size: 45px; position: absolute; left: 0; top:50%; transform: translate(0, -50%)" aria-hidden="true"></i>
+			<i onclick="SSNext('picmodal0')" class="fa fa-arrow-right" style="font-size: 45px; position: absolute; right: 0; top:50%; transform: translate(0, -50%)" aria-hidden="true"></i>
+
+			<img class="ss-image picmodal0-img" id="picmodal0-0" src="images/minigames/home.png" />
+			<img class="ss-image picmodal0-img" id="picmodal0-1" src="images/minigames/rps-1.png" />
+			<img class="ss-image picmodal0-img" id="picmodal0-2" src="images/minigames/rps-2.png" />
+			<img class="ss-image picmodal0-img" id="picmodal0-3" src="images/minigames/coin-1.png" />
+
+		</div>
+		<div class="picmodal" id="picmodal1">
+			<i onclick="SSPrev('picmodal1')" class="fa fa-arrow-left" style="font-size: 45px; position: absolute; left: 0; top:50%; transform: translate(0, -50%)" aria-hidden="true"></i>
+			<i onclick="SSNext('picmodal1')" class="fa fa-arrow-right" style="font-size: 45px; position: absolute; right: 0; top:50%; transform: translate(0, -50%)" aria-hidden="true"></i>
+
+			<img class="ss-image picmodal1-img" id="picmodal1-0" src="images/mhr-monsters/home.png" />
+			<img class="ss-image picmodal1-img" id="picmodal1-1" src="images/mhr-monsters/rathalos.png" />
+			<img class="ss-image picmodal1-img" id="picmodal1-2" src="images/mhr-monsters/magnamalo.png" />
+
+		</div>
+		<div class="picmodal" id="picmodal2">
+			<i onclick="SSPrev('picmodal2')" class="fa fa-arrow-left" style="font-size: 45px; position: absolute; left: 0; top:50%; transform: translate(0, -50%)" aria-hidden="true"></i>
+			<i onclick="SSNext('picmodal2')" class="fa fa-arrow-right" style="font-size: 45px; position: absolute; right: 0; top:50%; transform: translate(0, -50%)" aria-hidden="true"></i>
+
+			<img class="ss-image picmodal2-img" id="picmodal2-0" src="images/monsterhunterrisedata/hzv-1.png" />
+			<img class="ss-image picmodal2-img" id="picmodal2-1" src="images/monsterhunterrisedata/monsters-1.png" />
+
+		</div> 
+		<div class="picmodal" id="picmodal3">
+			<i onclick="SSPrev('picmodal3')" class="fa fa-arrow-left" style="font-size: 45px; position: absolute; left: 0; top:50%; transform: translate(0, -50%)" aria-hidden="true"></i>
+			<i onclick="SSNext('picmodal3')" class="fa fa-arrow-right" style="font-size: 45px; position: absolute; right: 0; top:50%; transform: translate(0, -50%)" aria-hidden="true"></i>
+
+			<img class="ss-image picmodal3-img" id="picmodal3-0" src="images/mhrbuilder/base-build-1.png" />
+			<img class="ss-image picmodal3-img" id="picmodal3-1" src="images/mhrbuilder/base-snapshot-1.png" />
+			<img class="ss-image picmodal3-img" id="picmodal3-2" src="images/mhrbuilder/build-1.png" />
+			<img class="ss-image picmodal3-img" id="picmodal3-3" src="images/mhrbuilder/snapshot-1.png" />
+
+		</div> 
+		<div class="picmodal" id="picmodal4">
+			<i onclick="SSPrev('picmodal4')" class="fa fa-arrow-left" style="font-size: 45px; position: absolute; left: 0; top:50%; transform: translate(0, -50%)" aria-hidden="true"></i>
+			<i onclick="SSNext('picmodal4')" class="fa fa-arrow-right" style="font-size: 45px; position: absolute; right: 0; top:50%; transform: translate(0, -50%)" aria-hidden="true"></i>
+
+			<img class="ss-image picmodal4-img" id="picmodal4-0" src="images/LZW/LZW%20bronze%20test%201.png" />
+		</div> 
+		<div class="picmodal" id="picmodal5">
+			<i onclick="SSPrev('picmodal5')" class="fa fa-arrow-left" style="font-size: 45px; position: absolute; left: 0; top:50%; transform: translate(0, -50%)" aria-hidden="true"></i>
+			<i onclick="SSNext('picmodal5')" class="fa fa-arrow-right" style="font-size: 45px; position: absolute; right: 0; top:50%; transform: translate(0, -50%)" aria-hidden="true"></i>
+
+			<img class="ss-image picmodal5-img" id="picmodal5-0" src="images/Writer%27s%20Block/Writer%27s%20Block.png" />
+		</div> 
+
+		<!-- Sidebar -->
+		<section id="sidebar">
+			<div class="inner">
+				<nav>
+					<ul>
+						<li><a href="#intro">Biography</a></li>
+						<li><a href="#one">Projects</a></li>
+						<li><a href="#two">Coursework</a></li>
+						<li><a href="#three">Contact Me</a></li>
+					</ul>
+				</nav>
+			</div>
+		</section>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Intro -->
+			<section id="intro" class="wrapper style1 fullscreen fade-up">
+				<div class="inner">
+					<h1>Brandon Eng</h1>
+						<p>Brandon Eng is a recent graduate of California Polytechnic State University, San Luis Obispo with a major <br />
+							in Computer Engineering. He has interests in entertainment, graphics, problem solving, and security. </p>
+						<ul class="actions">
+							<li><a target="_blank" href="Brandon%20Eng%27s%20Resume.pdf" class="button scrolly">View Resume</a></li>
+						</ul>
+				</div>
+			</section>
+
+			<!-- One -->
+			<section id="one" class="wrapper style2 spotlights">
+				<!-- Minigames -->
+				<section>
+					<a class="image"><img src="images/minigames/rps-2.png" alt="" data-position="center left" /></a>
+					<div class="content">
+						<div class="inner">
+							<h2>Minigames</h2>
+							<h3>February 2022</h3>
+							<p>
+								Minigames is a website to play simple games. Currently there are two games on the site. A Rock Paper Scissors game against a random AI that record 
+								wins, losses, ties, and times played. Then a coin toss game that records the number of times the coin was flipped and whether it landed on heads,
+								tails, or the side.
+							</p>
+							<p>
+								The website utilizes JavaScript and HTML for the frontend. When updating it goes through a CI/CD pipeline made with GitHub Actions. 
+								Upon finishing, it is then deployed onto an AWS EC2 Instance with a RDS to house the data. The data is updated using an API designed
+								with Django REST Framework. 
+							</p>
+							<p><a href="https://worldminigame.com/">https://worldminigame.com/</a></p>
+							<ul class="actions">
+								<li onclick="openModal(0)"><a href="#" class="button modalbutton" onclick="return false;">View Pictures</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<!-- MHR - Monsters -->
+				<section>
+					<a class="image"><img src="images/mhr-monsters/home.png" alt="" data-position="top left" /></a>
+					<div class="content">
+						<div class="inner">
+							<h2>MHR - Monsters</h2>
+							<h3>January 2022</h3>
+							<p>
+								MHR monsters provides users with hit zone value(HZV) data of each monster. This can be used by players in Monster Hunter Rise
+								to get accurate data on the monster they are currently hunting. The initial page displays a list of large monsters and averages,
+								allowing players to get a rough idea of weapon and elemental weaknesses. Upon clicking images it displays the complete chart for 
+								weapon and elemental weaknesses.
+							</p>
+							<p>
+								The frontend is designed using Django Templates to present the data. The backend uses Django to design an API to retrieve data.
+							</p>
+							<p><a href="https://mhr-monsters.herokuapp.com/">https://mhr-monsters.herokuapp.com/</a></p>
+							<ul class="actions">
+								<li onclick="openModal(1)"><a href="#" class="button modalbutton" onclick="return false;">View Pictures</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<!-- Monster Hunter Rise Data --> 
+				<section>
+					<a class="image"><img src="images/monsterhunterrisedata/hzv-1.png" alt="" data-position="top left" /></a>
+					<div class="content">
+						<div class="inner">
+							<h2>Monster Hunter Rise Data</h2>
+							<h3>January 2022</h3>
+							<p>
+								This is a web scraper used to retrieve data for the game Monster Hunter Rise. It scans the website and outputs
+								the located data into a CSV. This data is later used for other potential projects involving the game.
+							</p>
+							<p>
+								Data is gathered using Python and Beautiful Soup.
+							</p>
+							<ul class="actions">
+								<li onclick="openModal(2)"><a href="#" class="button modalbutton" onclick="return false;">View Pictures</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<!-- MHR Builder -->
+				<section>
+					<a class="image"><img src="images/mhrbuilder/snapshot-1.png" alt="" data-position="top left" /></a>
+					<div class="content">
+						<div class="inner">
+							<h2>MHR Builder</h2>
+							<h3>May 2021 - August 2021</h3>
+							<p>
+								MHR Builder is a tool that can be used by players to simulate builds for Monster Hunter Rise. The site allows users to quickly create an equipment 
+								loadout. It displays the current skill set as well as various damage/defense/weapon stats. There are other 
+								potential boosts that players can add/remove to improve theses stats. Then using the various stats the player selected it calculates an 
+								Effective Raw/Element(EFR/EFE). The EFR/EFE stat gives players a general idea on the potential damage output. Players can then take snapshots 
+								and share their builds with other players.
+							</p>
+							<p>
+								The tool is a web app made in Vue.js and receives data using JSON files. The builds are encoded using Base64 to easily share.
+							</p>
+							<p><a href="https://www.mhrbuilder.com/">https://www.mhrbuilder.com/</a></p>
+							<ul class="actions">
+								<li onclick="openModal(3)"><a href="#" class="button modalbutton" onclick="return false;">View Pictures</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<!-- Writer's Block -->
+				<section>
+					<a href="images/Writer%27s%20Block/Writer%27s%20Block.png" class="image"><img src="images/Writer%27s%20Block/Writer%27s%20Block.png" alt="" data-position="25% 25%" /></a>
+					<div class="content">
+						<div class="inner">
+							<h2>Writer's Block</h2>
+							<h3>January 2016</h3>
+							<p>
+								Writer's Block was a project created during the Global Game Jam in January 2016. 
+								This was done in a three person group within a 48 hour time limit. 
+								The game was implemented with Java in Greenfoot. The player would control various 
+								Shakespeare characters against either an AI or another player. The board used 
+								procedural generation so that there would be variation with each play attempt. 
+							</p>
+							<p><a href="http://globalgamejam.org/2016/games/writers-block">http://globalgamejam.org/2016/games/writers-block</a></p>
+							<ul class="actions">
+								<li onclick="openModal(5)"><a href="#" class="button modalbutton" onclick="return false;">View Picture</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<!-- LZW Decompression -->
+				<section>
+					<a href="images/LZW/LZW%20bronze%20test%201.png" class="image"><img src="images/LZW/LZW%20bronze%20test%201.png" alt="" data-position="25% 25%" /></a>
+					<div class="content">
+						<div class="inner">
+							<h2>LZW Decompression</h2>
+							<h3>February 2015</h3>
+							<p>
+								The LZW Decompression decompresses compressed LZW data. This program was implemented entirely with C.
+								The user would provide an input that has been compressed using the LZW algorithm. The decompression program would
+								then show what the actual information the compressed input was. 
+							</p>
+							<ul class="actions">
+								<li onclick="openModal(4)"><a href="#" class="button modalbutton" onclick="return false;">View Picture</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</section>
+
+			<!-- Two -->
+			<section id="two" class="wrapper style3 fade-up">
+				<div class="inner">
+					<h2>Coursework</h2>
+					<ul class="alt">
+						<li>CPE 315 - Computer Architecture</li>
+						<li>CPE 321 - Introduction to Computer Security</li>
+						<li>CPE 357 - Systems Programming</li>
+						<li>CPE 349 - Design and Analysis of Algorithm</li>
+						<li>CPE 378 - Interactive Entertainment Engineering</li>
+						<li>CPE 471 - Introduction to Computer Graphics</li>
+						<li>CPE 453 - Introduction to Operating Systems</li>
+						<li>CPE 464 - Introduction to Computer Networks</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- Three -->
+			<section id="three" class="wrapper style1 fade-up">
+				<div class="inner">
+					<h2>Contact Me</h2>
+					<section>
+						<ul class="contact">
+							<li>
+								<h3>Email</h3>
+								<a href="#" onclick="return false;" style="cursor: text; border: none">brandoneng000[at]gmail.com</a>
+							</li>
+							<li>
+								<h3>Social</h3>
+								<ul class="icons">
+									<li><a target="_blank" href="https://github.com/brandoneng000" class="fa-github"><span class="label">GitHub</span></a></li>
+									<li><a target="_blank" href="https://www.linkedin.com/in/brandon-eng-474216109" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+				</div>
+			</section>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer" class="wrapper style1-alt">
+			<div class="inner">
+				<ul class="menu">
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="assets/js/main.js"></script>
+
+		<script src="assets/js/modal.js"></script>
+	</body>
 </html>
