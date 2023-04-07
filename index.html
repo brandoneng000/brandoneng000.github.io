@@ -64,7 +64,17 @@
 			<i onclick="SSPrev('picmodal4')" class="fa fa-arrow-left" style="font-size: 45px; position: absolute; left: 0; top:50%; transform: translate(0, -50%)" aria-hidden="true"></i>
 			<i onclick="SSNext('picmodal4')" class="fa fa-arrow-right" style="font-size: 45px; position: absolute; right: 0; top:50%; transform: translate(0, -50%)" aria-hidden="true"></i>
 
-			<img class="ss-image picmodal4-img" id="picmodal4-0" src="images/LZW/LZW%20bronze%20test%201.png" />
+			<img class="ss-image picmodal4-img" id="picmodal4-0" src="images/FGOrdle/fgordle-01.png" />
+			<img class="ss-image picmodal4-img" id="picmodal4-1" src="images/FGOrdle/fgordle-02.png" />
+			<img class="ss-image picmodal4-img" id="picmodal4-2" src="images/FGOrdle/fgordle-03.png" />
+			<img class="ss-image picmodal4-img" id="picmodal4-3" src="images/FGOrdle/fgordle-04.png" />
+			<img class="ss-image picmodal4-img" id="picmodal4-4" src="images/FGOrdle/fgordle-05.png" />
+			<img class="ss-image picmodal4-img" id="picmodal4-5" src="images/FGOrdle/fgordle-06.png" />
+			<img class="ss-image picmodal4-img" id="picmodal4-6" src="images/FGOrdle/fgordle-07.png" />
+			<img class="ss-image picmodal4-img" id="picmodal4-7" src="images/FGOrdle/fgordle-08.png" />
+			<img class="ss-image picmodal4-img" id="picmodal4-8" src="images/FGOrdle/fgordle-09.png" />
+			<img class="ss-image picmodal4-img" id="picmodal4-9" src="images/FGOrdle/fgordle-10.png" />
+			
 		</div> 
 		<div class="picmodal" id="picmodal5">
 			<i onclick="SSPrev('picmodal5')" class="fa fa-arrow-left" style="font-size: 45px; position: absolute; left: 0; top:50%; transform: translate(0, -50%)" aria-hidden="true"></i>
@@ -103,6 +113,32 @@
 
 			<!-- One -->
 			<section id="one" class="wrapper style2 spotlights">
+				<!-- FGOrdle -->
+				<section style="background-color: #474AA2;">
+					<a class="image"><img src="images/FGOrdle/fgordle-01.png" alt="" data-position="25% 25%" /></a>
+					<div class="content">
+						<div class="inner">
+							<h2>FGOrdle</h2>
+							<h3>March 2023</h3>
+							<p>
+								FGOrdle is a Wordle-like game that uses characters from Fate/Grand Order instead of 5 letter words. The website 
+								informs the player on what aspects of the character they picked are correct. When either the player picks the 
+								correct daily character or uses up their 8 guesses then the daily character is revealed. Users can also create 
+								and account to maintain their current wins and how many times they have played. 
+							</p>
+							<p>
+								Built with microservice architecture in mind, the frontend of the website is HTML, CSS, and Javascript while the 
+								character information is stored using MongoDB. An API made with Flask retrieves this character information for the website. 
+								The MongoDB is updated through a cron job and AWS Lambda function. Account creation and sign in is stored in an SQLite DB, 
+								and the information is processed through a separate API made with Flask. Afterwards, the API then authenticates users 
+								with a JWT (JSON Web Token).
+							</p>
+							<ul class="actions">
+								<li onclick="openModal(4)"><a href="#" class="button modalbutton" onclick="return false;">View Picture</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
 				<!-- Minigames -->
 				<section>
 					<a class="image"><img src="images/minigames/rps-2.png" alt="" data-position="center left" /></a>
@@ -190,24 +226,6 @@
 							<p><a href="https://mhrbuilder.netlify.app/">https://mhrbuilder.netlify.app/</a></p>
 							<ul class="actions">
 								<li onclick="openModal(3)"><a href="#" class="button modalbutton" onclick="return false;">View Pictures</a></li>
-							</ul>
-						</div>
-					</div>
-				</section>
-				<!-- LZW Decompression -->
-				<section style="background-color: #474AA2;">
-					<a class="image"><img src="images/LZW/LZW%20bronze%20test%201.png" alt="" data-position="25% 25%" /></a>
-					<div class="content">
-						<div class="inner">
-							<h2>LZW Decompression</h2>
-							<h3>February 2015</h3>
-							<p>
-								The LZW Decompression decompresses compressed LZW data. This program was implemented entirely with C.
-								The user would provide an input that has been compressed using the LZW algorithm. The decompression program would
-								then show what the actual information the compressed input was. 
-							</p>
-							<ul class="actions">
-								<li onclick="openModal(4)"><a href="#" class="button modalbutton" onclick="return false;">View Picture</a></li>
 							</ul>
 						</div>
 					</div>
